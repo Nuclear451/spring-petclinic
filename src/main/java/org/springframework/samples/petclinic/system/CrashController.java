@@ -33,7 +33,7 @@ class CrashController {
 	@GetMapping("/oups")
 	public String triggerException() {
 		throw new RuntimeException(
-			"Произошла ошибка. Дата: " + LocalDateTime.now());
+			"Произошла ошибка. Дата:   " + LocalDateTime.now());
 	}
 
 }
